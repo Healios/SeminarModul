@@ -20,7 +20,7 @@
   "target": "Internal",
   "features": "TranslationFile",
   "idRange": {
-    "from": 50100,
-    "to": 50149
+    "from": 123456700,
+    "to": 123456799
   }
 }
