@@ -6,7 +6,7 @@ table 123456701 "Seminar"
 
     fields
     {
-        field(1; "No."; Code[20])
+        field(10; "No."; Code[20])
         {
             Caption = 'No.';
 

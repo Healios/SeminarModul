@@ -1,6 +1,6 @@
 page 123456700 "Seminar Setup"
 {
-    Caption='Seminar Setup';
+    Caption = 'Seminar Setup';
     PageType = Card;
     SourceTable = "Seminar Setup";
     InsertAllowed = false;
@@ -30,9 +30,9 @@ page 123456700 "Seminar Setup"
 
     trigger OnOpenPage();
     begin
-        if not Get then begin
-            Init;
-            Insert;
+        if not get then begin
+            init;
+            insert;
         end;
     end;
 }

@@ -1,9 +1,12 @@
 table 123456700 "Seminar Setup"
 {
+    Caption = 'Seminar Setup';
+
     fields
     {
-        field(10; "Primary Key"; Integer)
+        field(10; "Primary Key"; code[10])
         {
+            Caption = 'Primary Key';
         }
 
         field(20; "Seminar Nos."; Code[20])
