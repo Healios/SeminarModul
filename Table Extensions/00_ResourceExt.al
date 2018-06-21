@@ -21,10 +21,10 @@ tableextension 123456700 "CSD Resource Ext" extends Resource
 
         modify("Profit %")
         {
-           trigger OnAfterValidate();
-           begin
-            rec.TestField("Unit Cost");               
-           end;
+            trigger OnAfterValidate();
+            begin
+                rec.TestField("Unit Cost");
+            end;
         }
     }
 }
