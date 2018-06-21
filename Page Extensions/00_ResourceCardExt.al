@@ -4,10 +4,10 @@ pageextension 123456700 "CSD Resource Card Ext" extends "Resource Card"
     {
         addlast(General)
         {
-            field("CSD Resource Type"; "CSD Resource Type")
+            field("Resource Type"; "CSD Resource Type")
             {
             }
-            field("CSD Quantity Per Day"; "CSD Quantity Per Day")
+            field("Quantity Per Day"; "CSD Quantity Per Day")
             {
             }
         }
@@ -16,9 +16,10 @@ pageextension 123456700 "CSD Resource Card Ext" extends "Resource Card"
         {
             group("Room")
             {
-                field("CSD Maximum Participants"; "CSD Maximum Participants")
+                 Visible = ShowMaxField;
+                field("Maximum Participants"; "CSD Maximum Participants")
                 {
-                    Visible = ShowMaxField;
+        
                 }
             }
         }

@@ -9,12 +9,12 @@ pageextension 123456701 "CSD Resource List Ext" extends "Resource List"
 
         addafter(Type)
         {
-            field("CSD Resource Type"; "CSD Resource Type")
+            field("Resource Type"; "CSD Resource Type")
             {
 
             }
 
-            field("CSD Maximum Participants"; "CSD Maximum Participants")
+            field("Maximum Participants"; "CSD Maximum Participants")
             {
                 Visible = ShowMaxField;
             }
