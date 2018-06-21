@@ -1,0 +1,26 @@
+{
+  "id": "d5a92cc6-32b0-4286-9e21-dfae09c9f97d",
+  "name": "SeminarModul",
+  "publisher": "Marcus Brown",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "showMyCode": true,
+  "target": "Internal",
+  "features": "TranslationFile",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}
