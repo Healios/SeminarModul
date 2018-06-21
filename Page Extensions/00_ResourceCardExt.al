@@ -12,7 +12,7 @@ pageextension 123456700 "CSD Resource Card Ext" extends "Resource Card"
             }
         }
 
-        addlast("Personal Data")
+        addafter("Personal Data")
         {
             group("Room")
             {
