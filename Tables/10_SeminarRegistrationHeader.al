@@ -30,7 +30,7 @@ table 123456710 "Seminar Registration Header"
         }
         field(3; "Seminar No."; Code[20])
         {
-            Caption = 'Starting Date';
+            Caption = 'Seminar No.';
             TableRelation = Seminar;
 
             trigger OnValidate();

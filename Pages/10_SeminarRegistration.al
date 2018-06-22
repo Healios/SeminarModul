@@ -3,11 +3,13 @@ page 123456710 "Seminar Registration"
     // CSD1.00 - 2018-01-01 - D. E. Veloper
     //   Chapter 6 - Lab 3-1
     //     - Created new page
+    //   Chapter 8 - Lab 2 - 4
+    //   Added Action Navigate
+
 
     Caption = 'Seminar Registration';
     PageType = Document;
     SourceTable = "Seminar Registration Header";
-    UsageCategory = tasks;
 
     layout
     {
@@ -58,16 +60,14 @@ page 123456710 "Seminar Registration"
                 {
                 }
             }
-
             part(SeminarRegistrationLines; "Seminar Registration Subpage")
             {
                 Caption = 'Lines';
                 SubPageLink = "Document No." = field ("No.");
             }
-
             group("Seminar Room")
             {
-                field("Room Resource No."; "Room Resource No.")
+                field("Room Resource Code"; "Room Resource No.")
                 {
                 }
                 field("Room Name"; "Room Name")
@@ -113,9 +113,10 @@ page 123456710 "Seminar Registration"
             }
             part("Customer Details FactBox"; "Customer Details FactBox")
             {
-                Provider=SeminarRegistrationLines;
+                Provider = SeminarRegistrationLines;
                 SubPageLink = "No." = field ("Bill-to Customer No.");
             }
+
             systempart("Links"; Links)
             {
             }
@@ -151,3 +152,4 @@ page 123456710 "Seminar Registration"
         }
     }
 }
+
