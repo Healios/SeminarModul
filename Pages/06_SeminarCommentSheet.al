@@ -3,6 +3,7 @@ page 123456706 "Seminar Comment Sheet"
     Caption = 'Seminar Comment Sheet';
     PageType = List;
     SourceTable = "Seminar Comment Line";
+    AutoSplitKey=true;
     UsageCategory = Tasks;
 
     layout
@@ -32,16 +33,8 @@ page 123456706 "Seminar Comment Sheet"
         }
     }
 
-    actions
-    {
-        area(processing)
-        {
-            action(ActionName)
-            {
-                trigger OnAction();
-                begin
-                end;
-            }
-        }
-    }
+    trigger OnNewRecord(BelowxRec : Boolean);
+    begin
+        SetupNewLine();        
+    end;
 }
