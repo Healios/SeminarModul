@@ -17,6 +17,12 @@ table 123456710 "Seminar Registration Header"
                     NoSeriesMgt.TestManual(SeminarSetup."Seminar Registration Nos.");
                     "No. Series" := '';
                 end;
+
+                //8.1
+                if GetFilter("Seminar No.") <> '' then
+                    if GetRangeMin("Seminar No.") = GetRangeMax("Seminar No.") then
+                        Validate("Seminar No.", GetRangeMin("Seminar No."));
+                //8.1
             end;
         }
         field(2; "Starting Date"; Date)
